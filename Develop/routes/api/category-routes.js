@@ -94,7 +94,7 @@ router.put('/:id', (req, res) => {
 });
 
 router.delete('/:id', (req, res) => {
-  Category.remove({
+  Category.destroy({
     where: {
       id: req.params.id
     }
