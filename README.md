@@ -2,7 +2,9 @@
 ## Description
   I used javascript and SQL to create an the backend for an ecommerce site. 
 
- vid here 
+ https://user-images.githubusercontent.com/102101481/175829160-d954e61a-df1b-46f7-958e-ed635628e0b2.mp4
+
+ 
 
   ## ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
   
