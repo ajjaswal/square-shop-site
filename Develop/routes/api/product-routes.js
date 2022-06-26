@@ -130,7 +130,7 @@ router.put('/:id', (req, res) => {
         .filter(({ tag_id }) => !req.body.tagIds.includes(tag_id))
         .map(({ id }) => id);
       return Promise.all([
-        ProductTag.remove({ where: { id: productTagsToRemove } }),
+        ProductTag.destroy({ where: { id: productTagsToRemove } }),
         ProductTag.bulkCreate(newProductTags),
       ]);
     })
@@ -143,7 +143,7 @@ router.put('/:id', (req, res) => {
 });
 
 router.delete('/:id', (req, res) => {
-  Product.remove({
+  Product.destroy({
     where: {
       id: req.params.id
     }
